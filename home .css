@@ -1,0 +1,229 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+*{margin:0;
+padding:0;
+box-sizing: border-box; 
+font-family: "Playfair Display", serif;
+}
+
+body{
+
+    background: #3AAFA9;
+}
+.quote-box{
+    
+   background : white;
+   width : 700px;
+    position :absolute;
+    top: 10%;
+    left:50%;
+    transform:tanslate(-50%,-50%);padding:40px;text-align: center;
+    text-align:left;
+    border-radius: 10px;
+    box-shadow : 0 10px 20px 0px rgba(0,0,0,0.15);
+    
+
+
+}
+.quote-box h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position :relative;
+
+
+
+}
+.quote-box h2 :: after{
+    content: '';
+    width:75px;
+    height: 3px;
+    border-radius: 3px;
+    background :#3AAFA9;
+    position: absolute;
+    bottom:  -10px;
+    left:50%;
+    transform : translateX(-50%);
+}
+
+.quote-box blockquote{
+    font-size: 26px;
+    min-height: 110px;
+
+}
+.quote-box blockquote:: before, .quote-box blockquote::after{
+    content:' " ';
+}
+.quote-box span{
+    display: block;
+    margin-top: 10 px;
+    float: right;
+    position: relative;
+}
+.quote-box span::before{
+    content: ' ';
+    width: 20px;
+    height: 2px;
+    
+    position:  absolute;
+    top :50%;
+    left : -30p;
+
+}
+.quote-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-box button{
+    background: #17252A;
+    border-radius: 25px;
+    border:1px solid  #17252A;
+    width:150px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:5px;
+    cursor:pointer;
+    text-decoration-color: aliceblue;
+    cursor:pointer;
+    text-decoration: aliceblue;
+    color:white;
+}
+
+.quote-box button img{
+    width:20px;
+    margin-right : 10px;
+
+}
+.quote-box button:nth-child(2){
+    background: transparent;
+    color:#333;
+}
+.h3{
+    color:#333;
+}
+.login-box{
+    
+    background : #def2f1;
+    width : 400px;
+     position :absolute;
+     top: 10%;
+     right:70%; 
+     transform:tanslate(-50%,-50%);padding:40px;text-align: center;
+     text-align:left;
+     border-radius: 10px;
+     box-shadow : 0 10px 20px 0px rgba(0,0,0,0.15);
+     height:500px;
+  
+ 
+ }
+ .login-box p{
+    color : gray;
+    text-size-adjust: 2px;
+ }
+ .wrapper{
+    justify-content: center;
+
+ }
+ .input-box{
+
+    width:80%;
+    height:50px;position:relative;
+    border-bottom: 2px solid #162938;margin:30px; border-radius:  10px;
+ }
+
+ .input-box .icon{
+
+
+    position:absolute;
+    right:4px;
+    font-size:1.2cm;
+    color:#162938;
+    line-height: 27px;
+
+ }
+
+ .input-box label{
+    position : absolute;
+    top:50%;
+    left:0%;
+    transform: translateY(-50%);
+    font-size:1em;
+    color:gray;
+    font-weight: 500;
+    pointer-events: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    display: flex; /* Add display flex to the form container */
+    /* Set flex direction to column */
+    align-items: flex-start;border-radius: 10px;
+
+ }
+
+
+ .input-box input:focus ~label,
+ .input-box input:valid~label{
+    top:-10px;
+ }
+ .input-box input{
+    width:100%;
+    height:100%;
+    background: white;border:none;
+    outline:none;
+    font-size:1em;
+    color:#162938;
+    font-weight:600;
+    padding :0 35px 0;
+ }
+ .remember-forgot{
+    font-size: .9em;
+    color:#162938;
+    font-weight :500;
+    margin:-15px 0 15 px;
+    display: flex;
+    justify-content: space-between;
+ }
+ .remember-forgot label input {
+    accent-color: #162938;
+    margin-right: 3px;
+ }
+ .remember-forgot a {
+    color:#162938;
+    text-decoration: none;
+ }
+ .remember-forgot a:hover{ text-decoration: underline;
+
+ } 
+ .btn{
+
+    width: 300px;
+    height: 45px;
+    background: #162938;border: none;
+    cursor:pointer;
+    font-size:1em;
+    color:#fff;font-weight: 500;border-radius: 10px;
+ }
+ .login-register{
+    font-size:.9em;
+    color:#162938;
+    text-align:center;
+    font-weight: 500;
+    margin:25px 0 10px;
+ }
+ .login-register p a {
+    color: #162938;
+    text-decoration: none;font-weight: 600;
+ }
+ .login-register p a:hover{
+
+    text-decoration: underline;
+ }
+.login-box h1{
+    text-align: center;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Case Files</title>
+    <link rel="stylesheet" href="C:\Users\axz92\OneDrive\Desktop\tuddle\home .css">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script
+</head>
+
+<body>
+   <div class="quote-box">
+    <h2>Sherlock's Mind</h2>
+ <blockquote id="quote">Loading...</blockquote>
+<span id="author" >Loading...</span>
+<div>
+    <button onclick=" getquote(api_url)"> New Quote</button>
+    <button onclick="tweet()"> <img src="C:\Users\axz92\OneDrive\Desktop\tuddle\icons8-twitter-48 (2).png">Tweet</button>
+</div>
+
+   
+   </div>
+    
+   <script>
+    const quote=document.getElementById("quote");
+    const author=document.getElementById("author");
+    const api_url = "https://api.quotable.io/random";
+    async function getquote(url){
+        const response=await fetch(url);
+
+        var data= await response.json();
+        
+        quote.innerHTML=data.content;
+        author.innerHTML=data.author;
+    }
+    getquote(api_url);
+    function tweet(){
+        window.open("https://twitter.com/intent/tweet?text="+quote.innerHTML+author.innerHTML+"---- by","Tweet Window","width=600,height=300");
+    }
+   </script>
+
+
+
+
+ </div>
+
+<div class="login-box">
+ 
+<h1>Login</h1>
+
+
+
+
+  <div class="wrapper ">
+    <div class="input-box">
+<input type="email" required>
+<span class="icon">
+    <ion-icon name="mail"></ion-icon>
+</span>
+<label >Email</label>
+    </div>
+
+<div class="input-box">
+    <span class="icon">
+        <ion-icon name="lock-closed"></ion-icon>
+    </span>
+    <input type="password" required>
+    <label>Password</label>
+    
+
+  </div>
+  <div class="remember-forgot">
+    <label><input type="checkbox"> Remember me</label>
+    <a href="#">Forgot Password?</a>
+  </div>
+  <br>
+  <br>
+  <button type="submit "class="btn">Login</button>
+<div class="login-register">
+    <p>Don't have an account? <a href="#">Sign up</a></p>
+
+</div>
+ </div></div>
+
+</body>
+</html>
