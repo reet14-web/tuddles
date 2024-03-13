@@ -126,7 +126,49 @@ body{
     color : gray;
     text-size-adjust: 2px;
  }
- .wrapper{
+ .auth-content{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background : #def2f1;
+    width : 500px;
+     position :absolute;
+     top: 10%;
+     right:70%; 
+     transform:tanslate(-50%,-50%);padding:40px;text-align: center;
+     text-align:left;
+     border-radius: 10px;
+     box-shadow : 0 10px 20px 0px rgba(0,0,0,0.15);
+     height:500px;
+  
+ }
+ .heading{
+    text-align: center;
+ }
+ .auth-content .form-title{
+    text-align: center;
+ }
+ .auth-content .text-input{
+    width: 400px;
+    height:50px;position:relative;
+    border:none;
+    border-bottom: 2px solid #162938;margin:5px; border-radius: 5px;
+    font-weight: 500;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+
+ }
+ .auth-content .btn-big{
+    width: 400px;
+    height: 45px;
+    background: #162938;border: none;
+    cursor:pointer;
+    font-size:1em;
+    color:#fff;font-weight: 500;border-radius: 10px;
+    
+ }
+.wrapper{
     justify-content: center;
 
  }
